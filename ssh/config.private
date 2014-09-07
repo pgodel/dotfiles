@@ -1,0 +1,11 @@
+Host *
+    # multiplexing connection to speed up reconnecting.
+    ControlMaster auto
+    ControlPath /tmp/%r@%h:%p
+    ControlPersist yes
+
+    # Enable forward agent to send keys when jumping servers
+    ForwardAgent yes
+
+    # Keepalive
+    ServerAliveInterval 60

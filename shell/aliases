@@ -1,0 +1,2 @@
+alias gits="git status"
+alias gitd="git diff"
